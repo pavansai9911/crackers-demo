@@ -5,20 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Sri Lakshmi Crackers — Order Diwali crackers online. Browse our catalog and send your order via WhatsApp!">
   <meta name="theme-color" content="#FF6B00">
-
-  <!-- Open Graph / WhatsApp Share Preview -->
   <meta property="og:title" content="Sri Lakshmi Crackers — Order Online">
   <meta property="og:description" content="Browse & order Diwali crackers online. Fast delivery in Anakapalli area.">
   <meta property="og:type" content="website">
-
   <title>Sri Lakshmi Crackers — Order Crackers Online</title>
-
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
   <!-- ════════════════════════════
        HEADER
+       REQ #3: Bigger bold name, delivery badge removed
        ════════════════════════════ -->
   <header class="site-header" role="banner">
     <div class="header-inner">
@@ -26,10 +23,11 @@
         <img id="shop-logo" src="" alt="Shop Logo">
       </div>
       <div class="header-info">
+        <!-- REQ #3: font-size & weight driven by CSS .shop-name rules (clamp 20-28px, weight 900) -->
         <div class="shop-name" id="shop-name">Sri Lakshmi Crackers</div>
         <div class="shop-timing" id="shop-timing">⏰ 9AM – 10PM</div>
       </div>
-      <div class="delivery-badge" id="delivery-badge">🚚 Free above ₹999</div>
+      <!-- REQ #3: delivery badge REMOVED from header -->
     </div>
   </header>
 
@@ -41,9 +39,9 @@
     <div class="hero-welcome" id="hero-welcome">Celebrate Diwali the Right Way! Shop Local, Celebrate Big!</div>
     <h1 class="hero-shop-name" id="hero-shop-name">Sri Lakshmi Crackers</h1>
     <div class="hero-stats">
-      <span class="hero-stat" id="stat-products">22 Products</span>
+      <span class="hero-stat" id="stat-products"><span>38</span> Products</span>
       <span style="color:rgba(255,255,255,.4)">|</span>
-      <span class="hero-stat" id="stat-categories">8 Categories</span>
+      <span class="hero-stat" id="stat-categories"><span>8</span> Categories</span>
     </div>
   </section>
 
@@ -54,13 +52,9 @@
     <div class="sticky-inner">
       <div class="search-bar-wrapper">
         <span class="search-icon" aria-hidden="true">🔍</span>
-        <input
-          type="search"
-          id="search-bar"
-          class="search-bar"
-          placeholder="Search crackers, sparklers, bombs..."
-          autocomplete="off"
-          aria-label="Search products">
+        <input type="search" id="search-bar" class="search-bar"
+               placeholder="Search crackers, sparklers, bombs..."
+               autocomplete="off" aria-label="Search products">
         <span class="search-clear" id="search-clear" role="button" aria-label="Clear search">✕</span>
       </div>
       <div class="category-tabs" id="category-tabs" role="tablist" aria-label="Product categories">
@@ -74,6 +68,19 @@
        ════════════════════════════ -->
   <main role="main">
 
+    <!-- ─────────────────────────
+         REQ #2: MEGA SAVER COMBOS
+         (shown ABOVE Top Picks)
+         ───────────────────────── -->
+    <section class="mega-combos-section" id="mega-combos-section" aria-label="Mega Saver Combos">
+      <div class="section-container">
+        <div class="section-title">🔥 Mega Saver Combos</div>
+        <div class="mega-combos-scroll" id="mega-combos-scroll">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
     <!-- TOP PICKS / FEATURED -->
     <section class="top-picks-section" id="top-picks-section" aria-label="Top picks">
       <div class="section-container">
@@ -84,7 +91,7 @@
       </div>
     </section>
 
-    <!-- PRODUCT GRID -->
+    <!-- ALL PRODUCTS GRID -->
     <section aria-label="Product catalog">
       <div class="section-container">
         <div class="section-title">🛍️ All Products</div>
@@ -104,7 +111,8 @@
             <div class="shop-info-icon">📍</div>
             <div class="shop-info-label">Address</div>
             <div class="shop-info-value" id="info-address">RTC Complex, Anakapalli</div>
-            <a class="shop-info-link" id="info-map-link" href="#" target="_blank" rel="noopener" style="margin-top:6px;display:inline-flex;align-items:center;gap:4px;">
+            <a class="shop-info-link" id="info-map-link" href="#" target="_blank" rel="noopener"
+               style="margin-top:6px;display:inline-flex;align-items:center;gap:4px;">
               🗺️ View on Maps
             </a>
           </div>
@@ -126,7 +134,8 @@
             <div class="shop-info-icon">💬</div>
             <div class="shop-info-label">Chat With Us</div>
             <div class="shop-info-value" style="margin-bottom:8px;">Ravi Kumar</div>
-            <a class="wa-chat-btn" id="wa-chat-link" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+            <a class="wa-chat-btn" id="wa-chat-link" href="#" target="_blank" rel="noopener"
+               aria-label="Chat on WhatsApp">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
               </svg>
@@ -140,21 +149,19 @@
 
   </main>
 
-  <!-- ════════════════════════════
-       FOOTER
-       ════════════════════════════ -->
+  <!-- FOOTER -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
       <div class="footer-logo-name" id="footer-shop-name">© 2025 Sri Lakshmi Crackers</div>
       <div class="footer-address" id="footer-address">RTC Complex, Main Road, Anakapalli</div>
-
       <div id="safety-disclaimer" class="safety-disclaimer">
-        ⚠️ <strong>Safety Notice:</strong> Use firecrackers responsibly. Keep away from children. Follow local authority timing and noise regulations. Seller is not liable for misuse. Burst crackers only in designated open areas. Read all safety instructions on each product before use.
+        ⚠️ <strong>Safety Notice:</strong> Use firecrackers responsibly. Keep away from children.
+        Follow local authority timing and noise regulations. Seller is not liable for misuse.
+        Burst crackers only in designated open areas. Read all safety instructions before use.
       </div>
-
       <hr class="footer-divider">
       <div class="footer-copy">Made with ❤️ for local businesses</div>
-      <div class="footer-powered">Powered by Crackers SaaS v1.0</div>
+      <div class="footer-powered">Powered by Crackers SaaS v2.0</div>
     </div>
   </footer>
 
@@ -173,21 +180,16 @@
 
   <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-label="Shopping cart" aria-modal="true">
     <div class="drawer-handle" aria-hidden="true"></div>
-
     <div class="cart-header">
       <div class="cart-title" id="cart-title">🛒 Your Cart</div>
       <button class="icon-btn" id="cart-close-btn" aria-label="Close cart">✕</button>
     </div>
-
-    <!-- Delivery progress -->
     <div class="delivery-progress" id="delivery-progress-bar" style="display:none;">
       <div class="delivery-text">Add more for free delivery!</div>
       <div class="progress-track">
         <div class="progress-fill" style="width:0%"></div>
       </div>
     </div>
-
-    <!-- Cart items -->
     <div class="cart-body" id="cart-body">
       <div class="cart-empty-state">
         <div class="emoji">🎆</div>
@@ -195,11 +197,7 @@
         <p>Add some crackers to get started. 🪔</p>
       </div>
     </div>
-
-    <!-- Totals -->
     <div class="cart-totals" id="cart-totals" style="margin:0 20px 14px;"></div>
-
-    <!-- Footer -->
     <div class="cart-footer">
       <button class="btn-whatsapp" id="order-btn" disabled aria-label="Order on WhatsApp">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -216,9 +214,34 @@
   <div class="modal-backdrop" id="modal-backdrop" role="presentation"></div>
 
   <div class="product-modal" id="product-modal" role="dialog" aria-label="Product details" aria-modal="true">
-    <div class="drawer-handle" aria-hidden="true" style="position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:20;"></div>
-    <div id="modal-content">
-      <!-- Rendered dynamically by JS -->
+    <div class="drawer-handle" style="position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:20;" aria-hidden="true"></div>
+    <div id="modal-content"><!-- Rendered by JS --></div>
+  </div>
+
+  <!-- ════════════════════════════
+       REQ #2 — MEGA SAVER COMBO MODAL
+       ════════════════════════════ -->
+  <div class="combo-backdrop" id="combo-backdrop" role="presentation"></div>
+
+  <div class="combo-modal" id="combo-modal" role="dialog" aria-label="Combo pack details" aria-modal="true">
+    <!-- Gradient header (rendered by JS into combo-modal-header-inner) -->
+    <div id="combo-modal-header-inner">
+      <!-- JS fills this with gradient + title + price -->
+    </div>
+
+    <div class="combo-modal-body">
+      <div class="combo-items-label" id="combo-items-label">
+        📦 What's Inside
+      </div>
+      <div class="combo-items-list" id="combo-items-list">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+
+    <div class="combo-modal-footer">
+      <button class="btn-add-combo" id="combo-add-btn" aria-label="Add combo to cart">
+        🛒 Add Combo to Cart
+      </button>
     </div>
   </div>
 
@@ -228,65 +251,31 @@
   <div class="preorder-backdrop" id="preorder-backdrop" role="presentation"></div>
 
   <div class="preorder-modal" id="preorder-modal" role="dialog" aria-label="Complete your order" aria-modal="true">
-    <div class="drawer-handle" style="position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:20;width:44px;height:5px;background:var(--border);border-radius:3px;margin:10px 0;" aria-hidden="true"></div>
-
     <div class="preorder-header">
       <div class="preorder-title">📋 Your Details</div>
       <button class="icon-btn" id="preorder-close-btn" aria-label="Close form">✕</button>
     </div>
-
     <div class="preorder-body">
       <div class="preorder-hint">
-        💡 All fields are optional. Fill in what you'd like to share with the seller, then tap <strong>"Send Order on WhatsApp"</strong>.
+        💡 All fields are optional. Fill in what you'd like, then tap <strong>"Send Order on WhatsApp"</strong>.
       </div>
-
       <div class="form-group">
-        <label class="form-label" for="f-name">
-          Your Name <span class="opt-tag">Optional</span>
-        </label>
-        <input
-          type="text"
-          id="f-name"
-          class="form-input"
-          placeholder="e.g. Suresh Babu"
-          autocomplete="name">
+        <label class="form-label" for="f-name">Your Name <span class="opt-tag">Optional</span></label>
+        <input type="text" id="f-name" class="form-input" placeholder="e.g. Suresh Babu" autocomplete="name">
       </div>
-
       <div class="form-group">
-        <label class="form-label" for="f-phone">
-          Phone Number <span class="opt-tag">Optional</span>
-        </label>
-        <input
-          type="tel"
-          id="f-phone"
-          class="form-input"
-          placeholder="e.g. 9876543210"
-          autocomplete="tel"
-          maxlength="10">
+        <label class="form-label" for="f-phone">Phone Number <span class="opt-tag">Optional</span></label>
+        <input type="tel" id="f-phone" class="form-input" placeholder="e.g. 9876543210" autocomplete="tel" maxlength="10">
       </div>
-
       <div class="form-group" id="address-group">
-        <label class="form-label" for="f-address">
-          Delivery Address <span class="opt-tag">Optional</span>
-        </label>
-        <textarea
-          id="f-address"
-          class="form-textarea"
-          placeholder="House number, street, area, pincode..."
-          autocomplete="street-address"></textarea>
+        <label class="form-label" for="f-address">Delivery Address <span class="opt-tag">Optional</span></label>
+        <textarea id="f-address" class="form-textarea" placeholder="House number, street, area, pincode..." autocomplete="street-address"></textarea>
       </div>
-
       <div class="form-group">
-        <label class="form-label" for="f-note">
-          Special Note <span class="opt-tag">Optional</span>
-        </label>
-        <textarea
-          id="f-note"
-          class="form-textarea"
-          placeholder="Any special requests or instructions..."></textarea>
+        <label class="form-label" for="f-note">Special Note <span class="opt-tag">Optional</span></label>
+        <textarea id="f-note" class="form-textarea" placeholder="Any special requests or instructions..."></textarea>
       </div>
     </div>
-
     <div class="preorder-footer">
       <button class="btn-send-wa" id="send-wa-btn" aria-label="Send order on WhatsApp">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -294,21 +283,14 @@
         </svg>
         Send Order on WhatsApp
       </button>
-      <div class="btn-skip" id="skip-send-btn" role="button" tabindex="0"
-           aria-label="Skip form and send order immediately">
-        Skip & Send Order directly →
-      </div>
+      <div class="btn-skip" id="skip-send-btn" role="button" tabindex="0">Skip & Send Order directly →</div>
     </div>
   </div>
 
-  <!-- ════════════════════════════
-       TOAST NOTIFICATION
-       ════════════════════════════ -->
+  <!-- TOAST -->
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <!-- ════════════════════════════
-       SCRIPTS
-       ════════════════════════════ -->
+  <!-- SCRIPTS -->
   <script src="data/products.js"></script>
   <script src="assets/app.js"></script>
 
