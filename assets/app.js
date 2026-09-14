@@ -688,6 +688,14 @@ function changeModalQty(delta) {
   modalQty = Math.max(p.min_qty||1, Math.min(modalQty+delta, p.max_qty||10));
   const el = document.getElementById('modal-qty-display');
   if (el) el.textContent = modalQty;
+
+  // Qty changed after item was already in cart — flag the button as unsaved
+  // (bright/filled) again so the user knows to press it to save the change.
+  const btn = document.querySelector('.btn-add-modal');
+  if (btn && getCartItem(p.id)) {
+    btn.classList.remove('update-cart');
+    btn.textContent = '🛒 Update Cart';
+  }
 }
 
 function confirmAddToCart() {
@@ -697,8 +705,7 @@ function confirmAddToCart() {
   const ex = getCartItem(p.id);
   if (ex) { ex.qty = modalQty; saveCart(); updateCartUI(); showToast(`✅ ${p.name} updated!`); }
   else    { addToCart(p, modalQty); showToast(`🛒 ${p.name} added to cart!`); }
-  const btn = document.querySelector('.btn-add-modal');
-  if (btn) { btn.textContent = '✅ Update Cart'; btn.classList.add('update-cart'); }
+  closeProductModal();
 }
 
 function goToSlide(idx) {

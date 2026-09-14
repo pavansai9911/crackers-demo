@@ -445,7 +445,9 @@ a { text-decoration: none; color: inherit; }
   display: flex; flex-direction: column;
   overflow: hidden;
   box-shadow: 0 -8px 40px rgba(0,0,0,.2);
+  pointer-events: none;
 }
+.combo-modal.open { pointer-events: auto; }
 
 @media (min-width: 768px) {
   .combo-modal {
@@ -1011,7 +1013,9 @@ a { text-decoration: none; color: inherit; }
   transition: transform .38s cubic-bezier(.34,1.56,.64,1);
   display: flex; flex-direction: column; overflow: hidden;
   box-shadow: 0 -8px 40px rgba(0,0,0,.25);
+  pointer-events: none;
 }
+.product-modal.open { pointer-events: auto; }
 @media (min-width: 768px) {
   .product-modal {
     top: 50%; left: 50%; bottom: auto; right: auto;
@@ -1100,7 +1104,9 @@ a { text-decoration: none; color: inherit; }
   transform: translateY(105%); transition: transform .38s ease;
   display: flex; flex-direction: column; overflow: hidden;
   box-shadow: 0 -8px 40px rgba(0,0,0,.25);
+  pointer-events: none;
 }
+.preorder-modal.open { pointer-events: auto; }
 @media (min-width: 768px) {
   .preorder-modal {
     top: 50%; left: 50%; bottom: auto; right: auto;

@@ -184,19 +184,19 @@ const PRODUCTS = [
     id: "CB003", name: "Lakshmi Bomb", category: "bombs",
     description: "Pack of 20. Traditional Diwali essential — loud, bright, and festive!",
     mrp: 70, sell_price: 55, stock_status: "active",
-    min_qty: 1, max_qty: 20, images: [], is_featured: false, sort_order: 3
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 3
   },
   {
     id: "CB004", name: "Thunder King Bomb", category: "bombs",
     description: "Pack of 6. Maximum volume cracker with long-range burst sound.",
     mrp: 200, sell_price: 165, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: false, sort_order: 4
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 4
   },
   {
     id: "CB005", name: "Mini Lakshmi Bomb", category: "bombs",
     description: "Pack of 50. Budget-friendly mini crackers — perfect for long celebrations!",
     mrp: 60, sell_price: 45, stock_status: "active",
-    min_qty: 1, max_qty: 20, images: [], is_featured: false, sort_order: 5
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 5
   },
   {
     id: "CB006", name: "Super Cracker Chain", category: "bombs",
@@ -210,7 +210,7 @@ const PRODUCTS = [
     id: "SP001", name: "Color Sparklers 10cm", category: "sparklers",
     description: "Box of 10. Multi-color sparks — red, green, blue & gold. Kids & family favourite!",
     mrp: 80, sell_price: 65, stock_status: "active",
-    min_qty: 1, max_qty: 20, images: [], is_featured: true, sort_order: 1
+    min_qty: 1, max_qty: 10, images: [], is_featured: true, sort_order: 1
   },
   {
     id: "SP002", name: "Golden Sparklers 30cm", category: "sparklers",
@@ -222,7 +222,7 @@ const PRODUCTS = [
     id: "SP003", name: "Red & Green Sparklers", category: "sparklers",
     description: "Box of 12. Vibrant two-tone red & green. Perfect for night photography!",
     mrp: 55, sell_price: 45, stock_status: "active",
-    min_qty: 1, max_qty: 20, images: [], is_featured: false, sort_order: 3
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 3
   },
   {
     id: "SP004", name: "Rainbow Color Sparklers", category: "sparklers",
@@ -240,7 +240,7 @@ const PRODUCTS = [
     id: "SP006", name: "Mega Sparkler Bundle", category: "sparklers",
     description: "Box of 25 assorted sparklers — gold, silver & color. Great for large gatherings.",
     mrp: 220, sell_price: 175, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: false, sort_order: 6
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 6
   },
 
   // ─────────── AERIAL / SKY SHOTS (5 products) ───────────
@@ -248,31 +248,31 @@ const PRODUCTS = [
     id: "AS001", name: "Sky Shot 30pcs", category: "aerial",
     description: "30 shots. Multi-color aerial bursts reaching 50ft. Spectacular Diwali display!",
     mrp: 500, sell_price: 420, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: true, sort_order: 1
+    min_qty: 1, max_qty: 10, images: [], is_featured: true, sort_order: 1
   },
   {
     id: "AS002", name: "Color Rain Sky Shot", category: "aerial",
     description: "15 shots. Beautiful color-rain cascade effect with gold rising tail.",
     mrp: 420, sell_price: 350, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: false, sort_order: 2
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 2
   },
   {
     id: "AS003", name: "Phoenix Aerial Shell", category: "aerial",
     description: "10 premium shells. Peony burst pattern with gold crackling effect.",
     mrp: 650, sell_price: 560, stock_status: "active",
-    min_qty: 1, max_qty: 3, images: [], is_featured: false, sort_order: 3
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 3
   },
   {
     id: "AS004", name: "Star Mine 50 Shots", category: "aerial",
     description: "50 shots in rapid succession. Huge sky display — best for open grounds!",
     mrp: 900, sell_price: 750, stock_status: "active",
-    min_qty: 1, max_qty: 3, images: [], is_featured: true, sort_order: 4
+    min_qty: 1, max_qty: 10, images: [], is_featured: true, sort_order: 4
   },
   {
     id: "AS005", name: "Dragon Egg Aerial Burst", category: "aerial",
     description: "20 shots. Unique dragon egg pattern burst — fans out in a wide spread display.",
     mrp: 580, sell_price: 480, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: false, sort_order: 5
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 5
   },
 
   // ─────────── GROUND (5 products) ───────────
@@ -286,7 +286,7 @@ const PRODUCTS = [
     id: "GR002", name: "Snake Tablet 20pcs", category: "ground",
     description: "20 tablets. Classic black snake ground item — a childhood favourite!",
     mrp: 45, sell_price: 35, stock_status: "active",
-    min_qty: 1, max_qty: 20, images: [], is_featured: false, sort_order: 2
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 2
   },
   {
     id: "GR003", name: "Flower Pot Medium", category: "ground",
@@ -298,7 +298,7 @@ const PRODUCTS = [
     id: "GR004", name: "Big Fountain Flower Pot", category: "ground",
     description: "Single large pot. 6ft sparkling fountain of gold sparks — premium show piece!",
     mrp: 180, sell_price: 150, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: false, sort_order: 4
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 4
   },
   {
     id: "GR005", name: "Twinkling Star Ground Spinner", category: "ground",
@@ -330,7 +330,7 @@ const PRODUCTS = [
     id: "PJ004", name: "Mega Phuljhari 50cm", category: "phuljhari",
     description: "Pack of 5. Extra-thick 50cm phuljhari — burns for 2+ minutes! Maximum sparkle.",
     mrp: 160, sell_price: 130, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: false, sort_order: 4
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 4
   },
 
   // ─────────── KIDS SAFE (5 products) ───────────
@@ -338,13 +338,13 @@ const PRODUCTS = [
     id: "KS001", name: "Paper Caps 100pcs", category: "kids_safe",
     description: "100 caps for toy guns. Completely safe for kids aged 3+. No sparks, just pop!",
     mrp: 35, sell_price: 25, stock_status: "active",
-    min_qty: 1, max_qty: 20, images: [], is_featured: false, sort_order: 1
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 1
   },
   {
     id: "KS002", name: "Pop Pop Fun Pack", category: "kids_safe",
     description: "Pack of 25. Throw on floor for a cheerful pop! Safe, no flame, no sparks.",
     mrp: 50, sell_price: 40, stock_status: "active",
-    min_qty: 1, max_qty: 20, images: [], is_featured: true, sort_order: 2
+    min_qty: 1, max_qty: 10, images: [], is_featured: true, sort_order: 2
   },
   {
     id: "KS003", name: "Kids Sparkler Set", category: "kids_safe",
@@ -356,7 +356,7 @@ const PRODUCTS = [
     id: "KS004", name: "Toy Pistol with 200 Caps", category: "kids_safe",
     description: "Toy pistol + 200 paper caps included. Hours of safe play for kids aged 4+.",
     mrp: 185, sell_price: 150, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: false, sort_order: 4
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 4
   },
   {
     id: "KS005", name: "Wrist Band Shooter", category: "kids_safe",
@@ -370,19 +370,19 @@ const PRODUCTS = [
     id: "CO001", name: "Diwali Family Mega Pack", category: "combo",
     description: "50 items! Sparklers, bombs, aerial shots, phuljhari & ground items — everything!",
     mrp: 1299, sell_price: 999, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: true, sort_order: 1
+    min_qty: 1, max_qty: 10, images: [], is_featured: true, sort_order: 1
   },
   {
     id: "CO002", name: "Kids Special Combo", category: "combo",
     description: "20 items — all kids-safe. Pop pops, caps, mini sparklers & chakkar. Parent-approved!",
     mrp: 650, sell_price: 499, stock_status: "active",
-    min_qty: 1, max_qty: 5, images: [], is_featured: false, sort_order: 2
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 2
   },
   {
     id: "CO003", name: "Premium Aerial Combo", category: "combo",
     description: "15 aerial items — sky shots, phoenix shells & color rain. Best display pack!",
     mrp: 1899, sell_price: 1499, stock_status: "active",
-    min_qty: 1, max_qty: 3, images: [], is_featured: false, sort_order: 3
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 3
   },
 
   // ─────────── OTHERS ───────────
@@ -396,6 +396,6 @@ const PRODUCTS = [
     id: "OT002", name: "Bijli Cracker 50pcs", category: "others",
     description: "50 pieces. Rapid-fire string of crackers. Light one end — 50 pops in seconds!",
     mrp: 60, sell_price: 45, stock_status: "active",
-    min_qty: 1, max_qty: 20, images: [], is_featured: false, sort_order: 2
+    min_qty: 1, max_qty: 10, images: [], is_featured: false, sort_order: 2
   }
 ];
