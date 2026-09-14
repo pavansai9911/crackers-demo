@@ -23,6 +23,11 @@ const CATEGORIES = {
 /* ──────────────────────────────────────────
    SVG IMAGE GENERATORS
    ────────────────────────────────────────── */
+const KEYCAP_DIGITS = ['0️⃣','1️⃣','2️⃣','3️⃣','4️⃣','5️⃣','6️⃣','7️⃣','8️⃣','9️⃣'];
+function numberEmoji(n) {
+  return String(n).split('').map(d => KEYCAP_DIGITS[+d]).join('');
+}
+
 function escapeXml(str) {
   return String(str)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;')
@@ -789,9 +794,8 @@ function sendWhatsAppOrder(skipForm) {
   }
 
   msg += `🛒 *Order Items:*\n\n`;
-  const nums = ['1️⃣','2️⃣','3️⃣','4️⃣','5️⃣','6️⃣','7️⃣','8️⃣','9️⃣','🔟'];
   cart.forEach((item, i) => {
-    const num      = nums[i] || `${i+1}.`;
+    const num      = numberEmoji(i+1);
     const subtotal = item.sell_price * item.qty;
     if (item.isCombo) {
       msg += `${num} 🎁 ${item.name} *(MEGA SAVER COMBO)*\n`;
